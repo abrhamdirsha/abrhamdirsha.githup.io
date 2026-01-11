@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div class="logo">DevPortfolio</div>
+        <div class="menu-icon" id="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="nav-toggle">
+                <div class="toggle-wrapper">
+                    <span>light</span>
+                    <label class="switch">
+                        <input type="checkbox" id="profile-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="profile-container"> <img src="image.png" alt="Profile Photo" class="profile-img"
+                id="profile-pic">
+        </div>
+        <h1>Hi, I'm <span class="highlight">Abrham Dirsha</span></h1>
+        <div class="hero-text-box">
+            <p class="typing-container">
+                <span id="typewriter-text"></span><span class="cursor">|</span>
+            </p>
+        
+          </div>
+        <button id="cta-btn">View My Work</button>
+    </header>
+
+    <section id="about" class="reveal">
+        <h2>About Me</h2>
+        <p>
+            I am a <strong>Full-Stack Developer</strong> with a passion 
+            for building scalable web applications. I specialize in turning
+             complex problems into simple, beautiful, and intuitive designs.    </p>
+        <p> I have certefication in udacity</p>
+        <img src="certificate.jpg" alt="certificate">
+    </section>
+
+    <section id="projects" class="reveal">
+        <h2>My Projects</h2>
+        <div id="project-container" class="project-grid">
+        </div>
+    </section>
+    <section id="contact" class="reveal">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="How can I help you?"
+                        required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
